@@ -1,9 +1,11 @@
 export function sort(data: Number[]) {
 	let sorted = false;
+	let iterations = 0;
 
 	while (!sorted) {
 		sorted = true;
-		for (let i = 0; i < data.length; i++) {
+		for (let i = 0; i < data.length - iterations; i++) {
+			console.log(data[i]);
 			if (data[i] > data[i + 1]) {
 				const temp = data[i];
 
@@ -12,6 +14,8 @@ export function sort(data: Number[]) {
 				sorted = false;
 			}
 		}
+
+		iterations++;
 	}
 
 	return data;
