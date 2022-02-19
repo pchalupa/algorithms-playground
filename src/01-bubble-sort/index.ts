@@ -5,7 +5,6 @@ export function sort(data: Number[]) {
 	while (!sorted) {
 		sorted = true;
 		for (let i = 0; i < data.length - iterations; i++) {
-			console.log(data[i]);
 			if (data[i] > data[i + 1]) {
 				const temp = data[i];
 
