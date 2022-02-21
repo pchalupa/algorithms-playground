@@ -1,4 +1,4 @@
-export function sort(data: Number[]) {
+export function sort(data: number[]) {
 	let sorted = false;
 	let iterations = 0;
 
