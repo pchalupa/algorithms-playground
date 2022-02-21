@@ -1,4 +1,4 @@
-export function sort(data: Number[]) {
+export function sort(data: number[]) {
 	data.forEach((value, index) => {
 		let j = index - 1;
 
