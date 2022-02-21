@@ -13,3 +13,5 @@ export const addNumbers = (data: unknown[]): number => {
 		return sum + number;
 	}, 0);
 };
+
+export const factorial = (input: number): number => (input < 2 ? 1 : input + factorial(input - 1));
