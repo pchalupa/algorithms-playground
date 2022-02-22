@@ -16,4 +16,6 @@ export const search = (data: number[], needle: number) => {
 			return index;
 		}
 	}
+
+	return undefined;
 };
